@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+
+.container {
+  font-family: "Gabarito", sans-serif;
+  background-color: #001529;
+  padding: 80px 0 120px 0;
+  height: 100%;
+  width: 100%;
+  .banner {
+    margin: 0 24px 0 24px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    .infomation {
+      .content {
+        margin-bottom: 200px;
+        width: 800px;
+        h2 {
+          font-size: 60px;
+          color: #fff;
+          margin: 0 0 10px 0;
+          img {
+            padding-left: 25px;
+            height: 65px;
+            margin: 0 -10px;
+            animation-name: wave-animation;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            transform-origin: 70% 70%;
+          }
+        }
+        p {
+          font-size: 30px;
+          color: #ccc;
+        }
+        a {
+          top: 20px;
+          font-size: 30px;
+          font-weight: 600;
+          color: #fff;
+          padding: 20px 40px;
+          text-decoration: none;
+          background: linear-gradient(90deg, #506dd4, #506dd4, #eed80b);
+          position: relative;
+          z-index: 1;
+
+          &::after {
+            position: absolute;
+            content: "";
+            right: -7px;
+            bottom: -7px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #fff;
+            z-index: -1;
+          }
+          &:hover {
+            color: #202942;
+            margin-left: 7px;
+            &::after {
+              top: -7px;
+              left: -7px;
+              position: absolute;
+              content: "";
+              width: 100%;
+              height: 100%;
+              border: 1px solid #fff;
+              z-index: -1;
+            }
+          }
+        }
+      }
+      .profile {
+        display: flex;
+        justify-content: space-between;
+        .box {
+          position: relative;
+          color: #fff;
+          background-image: url(https://globalsourci.com/hamida_jannat/assets/img/shape/overlay-bg.png);
+          border: 1px dashed rgba(255, 255, 255, 0.2);
+          box-shadow: none;
+          z-index: 1;
+          border-radius: 40px;
+          &::before {
+            border-radius: 40px;
+            background: white;
+            box-shadow: 0px 10px 51px rgba(0, 0, 0, 0.5);
+            opacity: 0.1;
+            position: absolute;
+            z-index: -1;
+            content: "";
+            width: 100%;
+            height: 100%;
+          }
+          p {
+            text-align: center;
+            font-size: 25px;
+          }
+          img {
+            padding: 20px 80px 60px 80px;
+            width: 200px;
+            height: 200px;
+          }
+        }
+      }
+    }
+
+    .avata {
+      .box_avata {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+          height: 500px;
+          width: 400px;
+
+          border-radius: 10px;
+          padding-bottom: 0;
+          padding-top: 0;
+          opacity: 0.1;
+          background: #506dd4;
+          border-radius: 74px;
+          position: absolute;
+          content: "";
+          z-index: -1;
+        }
+
+        img {
+          height: 500px;
+          width: 400px;
+          object-fit: cover;
+          object-position: center;
+          z-index: 4;
+          transition: transform 0.25s ease;
+        }
+        &:hover {
+          transform: scale(1.4);
+          cursor: zoom-out;
+        }
+        &::after {
+          position: absolute;
+          //background-image: url(.../../../../asset/logo/flame-16246.gif);
+          left: 50%;
+          top: 50%;
+          content: "";
+          transform: translate(-50%, -50%) rotate(11deg);
+          height: 100%;
+          width: 90%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          z-index: 100;
+          margin: 0;
+          margin-top: 11%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}

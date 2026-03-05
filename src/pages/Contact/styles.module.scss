@@ -1,0 +1,46 @@
+.container {
+  height: 1000px;
+  background-image: url(https://globalsourci.com/hamida_jannat/assets/img/shape/map-light.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #001529;
+  .content {
+    color: #fff;
+    .header {
+      font-weight: 600;
+      font-size: 100px;
+      line-height: 100px;
+      background: linear-gradient(90deg, #506dd4 20%, #eed80b 100%);
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      background-clip: text;
+    }
+    h2 {
+      font-size: 45px;
+    }
+    p {
+      font-size: 25px;
+    }
+  }
+  .send_mail {
+    color: #fff;
+    margin-top: 83px;
+    .ip_ct {
+      height: 50px;
+      width: 808px;
+    }
+    .inf {
+      .ip_inf {
+        width: 400px;
+        height: 50px;
+      }
+    }
+    input {
+      margin: 10px 0 10px 0;
+      opacity: 10;
+    }
+  }
+}
